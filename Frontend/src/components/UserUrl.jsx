@@ -83,7 +83,7 @@ const UserUrl = () => {
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:text-blue-900 hover:underline"
                     >
-                      {`localhost:5000/${url.short_url}`}
+                      {`${import.meta.env.VITE_API_BASE_URL}/${url.short_url}`}
                     </a>
                   </div>
                 </td>
