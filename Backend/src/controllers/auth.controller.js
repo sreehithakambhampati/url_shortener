@@ -5,9 +5,11 @@ import { signToken } from "../utils/helper.js";
 const cookieOptions = {
   httpOnly: true,
   secure: process.env.NODE_ENV === "production",
-  sameSite: "Lax",
+  sameSite: "None",
   maxAge: 1000 * 60 * 60, 
 };
+
+
 
 export const register_user = wrapAsync(async (req, res) => {
   const { name, email, password } = req.body;
