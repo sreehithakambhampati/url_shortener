@@ -26,7 +26,8 @@ app.use("/api/auth",auth_routes)
 app.use("/api/create", short_url);
 app.get("/:id", redirectFromShortUrl);
 app.use(errorHandler)
-app.listen(5000, async () => {
+const port = process.env.PORT || 5000
+app.listen(port, async () => {
   await connectDB();
   console.log("Server running at http://localhost:5000");
 });
