@@ -1,4 +1,4 @@
-# URL Shortener (MERN Stack)
+# URL Shortener
 
 A full-stack URL Shortener built using the MERN stack that allows users to create short links for long URLs, track click analytics, and manage links from a personal dashboard. Includes secure authentication and support for custom slugs. 
 
